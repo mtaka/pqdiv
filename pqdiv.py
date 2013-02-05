@@ -16,4 +16,4 @@ def jx(s): return CR.join([S.join(r) for r in s])
 def sp(s,n): return [] if not s else [s[:n]]+sp(s[n:],n)
 HN=u' 0123456789'; ZN=u'　０１２３４５６７８９'; DIC=dict([(ord(h),z) for h in HN for z in ZN])
 def nz(s): return s.translate(DIC)
-print jx(sp([qd(x,y,False) for x,y in sf(la(R29,R19))],5)
+print jx(sp([qd(x,y,False) for x,y in sf(la(R29,R19))],5) #doesn't work because of unicode problem... 
